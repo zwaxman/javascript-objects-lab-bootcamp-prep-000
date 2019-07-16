@@ -1,3 +1,5 @@
+var recipes = {};
+
 // /*global describe, it */
 
 // describe('Objects', function() {
