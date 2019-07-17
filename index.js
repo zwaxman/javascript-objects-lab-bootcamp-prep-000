@@ -6,7 +6,7 @@ function updateObjectWithKeyAndValue(obj,key,value){
 }
 
 function destructivelyUpdateObjectWithKeyAndValue(obj,key,value){
-  return obj.key=value;
+  return obj[key]=value;
 }
 
 //   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
