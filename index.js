@@ -9,22 +9,12 @@ function destructivelyUpdateObjectWithKeyAndValue(obj,key,value){
   obj[key]=value;
   return obj
 }
+ function deleteFromObjectByKey(obj,key){
+   var newObj=Object.assign({},obj)
+   delete newObj[key]
+   return newObj
+ }
 
-//   describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
-//     it('updates `object` with the given `key` and `value` (it is destructive) and returns the entire updated object', function() {
-//       var obj = { prop: 1 }
-
-//       expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).toMatch({
-//         prop: 1,
-//         prop2: 2
-//       })
-
-//       expect(obj).toMatch({
-//         prop: 1,
-//         prop2: 2
-//       })
-//     })
-//   })
 
 //   describe('deleteFromObjectByKey(object, key)', function() {
 //     it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
