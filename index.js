@@ -1,11 +1,8 @@
 var recipes = {};
 
-// /*global describe, it */
-
-// describe('Objects', function() {
-//   it('defines a `recipes` object', function() {
-//     expect(typeof recipes).toEqual('object')
-//   })
+function updateObjectWithKeyAndValue(obj,key,value){
+  newObj=Object.assign({},obj,{key: value})
+}
 
 //   describe('updateObjectWithKeyAndValue(object, key, value)', function() {
 //     it('returns an object with the orignal key value pairs and the new key value pair', function() {
